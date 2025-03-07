@@ -55,30 +55,25 @@ Seed the `games` table with all the files in the `data/example` folder:
 
 ```text
 docker exec -itu 1000:1000 chess_data_php php cli/seed/games.php data/example
-✗ 2 games did not pass the validation.
-✓ 4142 games out of a total of 4144 are OK.
-✓ 597 games out of a total of 597 are OK.
-✗ 1 games did not pass the validation.
-✓ 1824 games out of a total of 1825 are OK.
-✓ 3878 games out of a total of 3878 are OK.
-✓ 4646 games out of a total of 4646 are OK.
-✗ 2 games did not pass the validation.
-✓ 2126 games out of a total of 2128 are OK.
-✓ 2275 games out of a total of 2275 are OK.
-✓ 1218 games out of a total of 1218 are OK.
-✓ 827 games out of a total of 827 are OK.
-✗ 5 games did not pass the validation.
-✓ 1341 games out of a total of 1346 are OK.
-✓ 5662 games out of a total of 5662 are OK.
 ✓ 3444 games out of a total of 3444 are OK.
+✓ 1825 games out of a total of 1825 are OK.
+✓ 5662 games out of a total of 5662 are OK.
+✓ 1346 games out of a total of 1346 are OK.
+✓ 597 games out of a total of 597 are OK.
+✓ 2128 games out of a total of 2128 are OK.
+✓ 4646 games out of a total of 4646 are OK.
+✓ 4144 games out of a total of 4144 are OK.
+✓ 1218 games out of a total of 1218 are OK.
+✓ 3878 games out of a total of 3878 are OK.
+✓ 2275 games out of a total of 2275 are OK.
+✓ 827 games out of a total of 827 are OK.
 ```
 
 Seed the `games` table file by file:
 
 ```text
 docker exec -itu 1000:1000 chess_data_php php cli/seed/games.php data/example/Anand.pgn
-✗ 2 games did not pass the validation.
-✓ 4142 games out of a total of 4144 are OK.
+✓ 4144 games out of a total of 4144 are OK.
 ```
 
 The `games` table can also be seeded with your own set of PGN files in the `data/games` folder:
